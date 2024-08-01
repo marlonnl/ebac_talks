@@ -23,6 +23,7 @@
     }
 
     &__text {
+        color: #ffffff;
         margin-top: 64px;
         margin-bottom: 64px;
 
@@ -36,6 +37,53 @@
         margin: 0 auto;
         display: block;
         height: 80px;
+    }
+
+    &__info {
+        padding: 16px 24px;
+        background-color: #fff;
+
+        display: flex;
+        justify-content: space-between;
+
+        &__list {
+            display: flex;
+            gap: 40px;
+            list-style-type: none;
+            
+            &__item {
+                display: block;
+
+                h3 {
+                    font-size: 18px;
+                    line-height: 22px;
+                    padding-bottom: 8px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+
+        @media (max-width: 640px) {
+            display: block;
+
+            &__list {
+                display: block;
+
+                &__item {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+
+        @media (max-width: 1024px) {
+            &__list {
+                gap: 16px;
+            }
+        }
     }
 
     @media (max-width: 640px) {
