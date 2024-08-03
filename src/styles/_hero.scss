@@ -1,3 +1,5 @@
+@use 'vars';
+
 .hero {
     padding-top: 64px;
     padding-bottom: 100px;
@@ -17,13 +19,13 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #000;
+        background-color: vars.$secondaryTextColor;
         content: '';
         opacity: .7;
     }
 
     &__text {
-        color: #ffffff;
+        color: vars.$textColor;
         margin-top: 64px;
         margin-bottom: 64px;
 
@@ -41,8 +43,8 @@
 
     &__info {
         padding: 16px 24px;
-        background-color: #fff;
-        color: #000;
+        background-color: vars.$textColor;
+        color: vars.$secondaryTextColor;
 
         display: flex;
         justify-content: space-between;

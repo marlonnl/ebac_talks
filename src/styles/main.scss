@@ -1,3 +1,4 @@
+@use 'vars';
 @use 'hero';
 @use 'event';
 
@@ -13,7 +14,7 @@
     width: 100%;
     margin: 0 auto;
 
-    color: #fff;
+    color: vars.$textColor;
 
     @media (max-width: 640px) {
         max-width: 80%;
@@ -35,8 +36,8 @@
     white-space: nowrap;
 
     &--primary {
-        color: #fff;
-        background-color: #4F2AC3;
+        color: vars.$textColor;
+        background-color: vars.$bgButton;
     }
 
     @media (max-width: 640px) {
